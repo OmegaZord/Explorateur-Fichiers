@@ -1,0 +1,125 @@
+/* fond d'écran du body */
+body {
+    background-color: lightgrey;
+}
+/*  titre principal Votre explorateur de fichiers*/
+body h1 {
+    text-align: center;
+    color: #c12e2a;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*  barre de recherche */
+.inputUn{
+    margin-bottom: 1%;
+    border-radius:7px;
+    height:50px;
+}
+/* div qui affiche le répertoite courant  */
+.chemin {
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+/* les bouttons pour ajouter un fichier et pour retourner à la page précédente*/
+body div header form input {
+    background-color:darkgrey;
+    margin-top:1%;
+    border-radius:5px;
+    width:15%;
+    height:50px;
+    border-style:outset;
+}
+
+body div header form input:hover {
+    border-style:inset;
+    background-color:white;
+}
+/*  personalisation des dossier et des fichiers*/
+.folder  {
+    border: 1px solid #0000FF;
+    border-radius:10px;
+    background-color: #808080;
+    color: white;
+    font-size: 13px;
+    padding: 1%;
+    transition: background-color 0.5s;
+}
+.folder:hover{
+    border: 1px solid #FF0000;
+    border-radius:10px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 1%;
+}
+/* paramètre du premier bouton home*/
+.home
+{
+    font-size: 21px;
+    padding-top: 9px;
+    text-align: right;
+}
+
+/* affiche le nom du système d'exploitation */
+.phpOS
+{
+    float: right;
+}
+
+@media screen and (min-width: 769px){
+    .ligne {
+        margin-right: 4%;
+        margin-bottom: 15px;
+        margin-left: 4%;
+    }
+    .btnSuppression
+    {
+        position:relative;
+        left:65%;
+        font-size: 21px;
+    }
+    .btnRennomer{
+        position:relative;
+        left:60%;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ligne {
+        margin-bottom: 5%;
+        font-size: 150%;
+        text-align: center;
+    }
+    .ligne:hover{
+        font-size:150%;
+        text-align: center;
+    }
+    body div header form input {
+        font-size:75%;
+        width:30%;
+    }
+    /* bouton pour supprimer un fichier*/
+    .btnSuppression{
+    position:relative;
+    float:right;
+    }
+    /* bouton pour renomer un fichier  */
+    .btnRennomer{
+    position:relative;
+    float:left;
+    }
+}
+
+
+/* bouton pour supprimer un fichier*/
+.btnSuppression:hover{
+    color: #0000FF;
+}
+/* bouton pour renomer un fichier  */
+.btnRennomer:hover{
+    color: #0000FF;
+}
+
